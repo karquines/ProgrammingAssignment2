@@ -16,10 +16,11 @@ makeCacheMatrix <- function(x = matrix()) {
          getInverse = getInverse)
 }
 
+## casheSolve is a function that creates the inverse of the matrix created in makeCasheMatrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-  i <- x$getIverse()
+  i <- x$getInverse()
   if(!is.null(i)){
     message("getting cahed data")
     return(i)
